@@ -4,6 +4,8 @@ Go-Richard E. Bird - Clear Sky Broadband Solar Radiation Model
 [![GoDoc](https://godoc.org/github.com/maltegrosse/go-bird?status.svg)](https://pkg.go.dev/github.com/maltegrosse/go-bird)
 ![Go](https://github.com/maltegrosse/go-bird/workflows/Go/badge.svg) 
 
+:warning: **results not validated**
+
 The Bird Clear Sky Model, (original implemented by Afshin Michael Andreas/NREL, adopted in go lang) authored by Richard Bird, is a broadband algorithm that produces estimates of clear sky direct beam, hemispherical diffuse, and total hemispherical solar radiation on a horizontal surface.
 The model is based on comparisons with results from rigorous radiative transfer codes. It is composed of simple algebraic expressions with 10 user-provided inputs. Model results should be expected to agree within ±10% with rigorous radiative transfer codes. The model computes hourly average solar radiation for every hour of the year, based on the 10 user input parameters; however, variable atmospheric parameters such as aerosol optical depth, ozone, and water vapor are fixed for the entire year.
 ## Installation

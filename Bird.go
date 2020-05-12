@@ -232,7 +232,8 @@ func (b *bird) Calculate() error {
 
 	if (b.zenith >= 0) && (b.zenith < 90) && (b.r > 0) {
 		etrn = 1367.0 / (b.r * b.r)
-		coszen = math.Cos(b.zenith * 3.14159265358979323846264338328 / 180.0)
+
+		coszen = math.Cos(b.zenith * math.Pi / 180.0)
 		b.amass = 1.0 / (coszen + 0.50572*math.Pow(96.07995-b.zenith, -1.6364))
 
 		press = b.pressure * b.amass / 1013
